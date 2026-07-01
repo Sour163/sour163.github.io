@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sour163.github.io/balcony-style-74/sitemap.xml
+Sitemap: https://sour163.github.io/sitemap.xml
