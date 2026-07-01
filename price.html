@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прайс-лист · Евро Окна</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  :root{
+    --ink:#0f1f3d;--steel:#1b3a6b;--steel-light:#3b6bb5;--sky:#7fb4e8;
+    --sky-pale:#dceaf7;--frost:#f4f8fc;--white:#fff;--line:#d4e0ee;--ash:#6b7d96;--accent:#2e6fd4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--frost);color:var(--ink);font-family:'Oswald',sans-serif;font-weight:300;
+    line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 0 60px;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 20px;}
+
+  .top{background:linear-gradient(160deg,var(--steel),var(--ink));color:#fff;padding:50px 0 44px;
+    position:relative;overflow:hidden;margin-bottom:40px;}
+  .top::before{content:'';position:absolute;top:-50%;left:-30%;width:160%;height:200%;
+    background:radial-gradient(circle at 50% 0%,rgba(127,180,232,.18),transparent 60%);}
+  .top .wrap{position:relative;}
+  .back{display:inline-flex;align-items:center;gap:8px;color:var(--sky);text-decoration:none;
+    font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:22px;transition:.2s;}
+  .back:hover{color:#fff;}
+  .top .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.35em;
+    text-transform:uppercase;color:var(--sky);margin-bottom:14px;}
+  .top h1{font-weight:700;font-size:clamp(2.2rem,7vw,3.4rem);text-transform:uppercase;line-height:1;}
+  .top .sub{color:var(--sky-pale);font-size:1.05rem;margin-top:14px;max-width:520px;}
+
+  .price-wrap{border:1px solid var(--line);background:var(--white);}
+  .price-cat{padding:24px 26px 6px;font-family:'JetBrains Mono',monospace;font-size:.7rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border-top:1px solid var(--line);}
+  .price-cat:first-child{border-top:none;}
+  .price-row{display:flex;align-items:baseline;gap:12px;padding:13px 26px;
+    border-top:1px solid var(--line);transition:background .2s;}
+  .price-row:hover{background:var(--sky-pale);}
+  .price-name{font-size:1.02rem;color:var(--ink);font-weight:300;max-width:60%;}
+  .price-dots{flex:1;border-bottom:1px dotted #c5d4e6;transform:translateY(-4px);min-width:16px;}
+  .price-val{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1.05rem;
+    color:var(--steel);white-space:nowrap;}
+  .price-val .from{font-size:.72rem;color:var(--ash);font-weight:400;}
+  .price-val.free{color:#2e9d5b;}
+
+  .note{margin-top:24px;padding:20px 24px;background:var(--sky-pale);border-left:3px solid var(--steel);
+    font-size:.96rem;color:var(--ink);line-height:1.6;}
+  .note b{font-weight:500;}
+
+  .cta{text-align:center;margin-top:34px;}
+  .phone-link{display:inline-flex;align-items:center;gap:12px;font-family:'JetBrains Mono',monospace;
+    font-weight:500;font-size:clamp(1.2rem,4vw,1.6rem);color:#fff;text-decoration:none;
+    padding:16px 34px;background:var(--steel);transition:.3s;letter-spacing:.02em;}
+  .phone-link:hover{background:var(--ink);box-shadow:0 8px 24px rgba(27,58,107,.3);transform:translateY(-2px);}
+  .phone-link svg{width:24px;height:24px;fill:currentColor;}
+  .cta .small{margin-top:14px;color:var(--ash);font-size:.95rem;}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a href="index.html" class="back">← На главную</a>
+    <div class="eyebrow">Евро Окна · Челябинская область</div>
+    <h1>Прайс-лист</h1>
+    <div class="sub">Честные цены без скрытых доплат. Точную стоимость рассчитаем на бесплатном замере.</div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="price-wrap">
+    <div class="price-cat">Балконы и лоджии</div>
+    <div class="price-row"><span class="price-name">Монтаж балкона под ключ</span><span class="price-dots"></span><span class="price-val">35 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Остекление балконов и лоджий</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>65 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Панорамное остекление балконов</span><span class="price-dots"></span><span class="price-val">100 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Отделка балконов и лоджий</span><span class="price-dots"></span><span class="price-val">35 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Установка балконных крыш</span><span class="price-dots"></span><span class="price-val">14 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Ремонт балконной крыши</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>250 ₽/м²</span></div>
+    <div class="price-row"><span class="price-name">Замена порога на балкон</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>1 000 ₽</span></div>
+
+    <div class="price-cat">Окна</div>
+    <div class="price-row"><span class="price-name">Монтаж окон</span><span class="price-dots"></span><span class="price-val">15 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Демонтаж окон</span><span class="price-dots"></span><span class="price-val free">Бесплатно</span></div>
+    <div class="price-row"><span class="price-name">Монтаж подоконников</span><span class="price-dots"></span><span class="price-val">500 ₽</span></div>
+    <div class="price-row"><span class="price-name">Монтаж оконных отливов</span><span class="price-dots"></span><span class="price-val">300 ₽</span></div>
+    <div class="price-row"><span class="price-name">Внутренняя отделка окон панелями ПВХ</span><span class="price-dots"></span><span class="price-val">2 000 ₽</span></div>
+    <div class="price-row"><span class="price-name">Изготовление москитных сеток</span><span class="price-dots"></span><span class="price-val">1 200 ₽</span></div>
+
+    <div class="price-cat">Ремонт и обслуживание</div>
+    <div class="price-row"><span class="price-name">Ремонт окон</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>300 ₽</span></div>
+    <div class="price-row"><span class="price-name">Ремонт балконных дверей</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>500 ₽</span></div>
+    <div class="price-row"><span class="price-name">Ремонт балконов и лоджий под ключ</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>500 ₽/ед.</span></div>
+    <div class="price-row"><span class="price-name">Регулировка окон</span><span class="price-dots"></span><span class="price-val">300 ₽</span></div>
+    <div class="price-row"><span class="price-name">Замена створки окна</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>500 ₽</span></div>
+    <div class="price-row"><span class="price-name">Замена стеклопакета</span><span class="price-dots"></span><span class="price-val">2 000 ₽</span></div>
+
+    <div class="price-cat">Дополнительные услуги</div>
+    <div class="price-row"><span class="price-name">Натяжные потолки</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>1 000 ₽/м²</span></div>
+    <div class="price-row"><span class="price-name">Заборы под ключ (с материалом)</span><span class="price-dots"></span><span class="price-val"><span class="from">от </span>4 000 ₽/пог.м</span></div>
+  </div>
+
+  <div class="note">
+    <b>Замер и консультация — бесплатно.</b> Цены указаны ориентировочно. Итоговая стоимость зависит от размеров, материалов и сложности — рассчитаем точно на замере. Работаем по договору с фиксированной ценой.
+  </div>
+
+  <div class="cta">
+    <a href="tel:+79823052220" class="phone-link">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>
+      8 (982) 305-22-20
+    </a>
+    <div class="small">Александр · звоните, отвечу лично</div>
+  </div>
+</div>
+
+</body>
+</html>
